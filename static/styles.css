@@ -149,17 +149,6 @@ body {
   text-align: center;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #e9e9e9;
-  color: #000000;
-
-  text-align: center;
-}
-
 input {
   width: 100%;
   margin-bottom: 10px;
