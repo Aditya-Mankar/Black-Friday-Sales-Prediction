@@ -4,7 +4,11 @@
 ## Overview:
 - In this project, we are going to predict the purchasing amount of customers during Black Friday, using various features such as age, gender, marital status.
 
-> WebApp: https://black-friday-sales-prediction.herokuapp.com/
+## WebApp: 
+> Link: https://black-friday-sales-prediction.herokuapp.com/
+----
+![](Readme/WebApp.gif)
+----
 
 ## Dataset:
 | Column ID |         Column Name        | Data type |           Description           | Masked |
@@ -23,7 +27,7 @@
 |     11    |          Purchase          |   int64   |         Purchase amount         | False  |
 
 ----
-![](plot.png)
+![](Readme/plot.png)
 
 ## Motivation:
 - Predicting customer's behaviour is one of the most popular applications of Machine Learning in various fields like Finance, Sales, Marketing.
