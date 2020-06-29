@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Black Friday Sales Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+  <div class="login">
+    <h1>Black Friday Sales Predictor</h1>
+
+    <form action="{{ url_for('predict')}}" method="post">
+      <input type="text" name="Age" placeholder="Age" required="required" pattern="\d*" title="Numbers only, please."/>
+      <input type="text" name="Occupation Code" placeholder="Occupation Code [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
+      <input type="text" name="Stay in Current City" placeholder="Stay in Current City [years]" required="required" pattern="\d*" title="Numbers only, please."/>
+      <input type="text" name="Product Category 1" placeholder="Product Category 1 [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
+      <input type="text" name="Product Category 2" placeholder="Product Category 2 [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
+
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    <h2> {{ prediction_text }} </h2>
+
+  </div>
+
+</body>
+
+</html>
