@@ -17,11 +17,11 @@
     <h1>Black Friday Sales Predictor</h1>
 
     <form action="{{ url_for('predict')}}" method="post">
-      <input type="text" name="Age" placeholder="Age" required="required" />
-      <input type="text" name="Occupation Code" placeholder="Occupation Code" required="required" />
-      <input type="text" name="Stay in Current City" placeholder="Stay in Current City" required="required" />
-      <input type="text" name="Product Category 1" placeholder="Product Category 1" required="required" />
-      <input type="text" name="Product Category 2" placeholder="Product Category 2" required="required" />
+      <input type="text" name="Age" placeholder="Age" required="required" pattern="\d*" title="Numbers only, please."/>
+      <input type="text" name="Occupation Code" placeholder="Occupation Code [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
+      <input type="text" name="Stay in Current City" placeholder="Stay in Current City [years]" required="required" pattern="\d*" title="Numbers only, please."/>
+      <input type="text" name="Product Category 1" placeholder="Product Category 1 [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
+      <input type="text" name="Product Category 2" placeholder="Product Category 2 [range = 1 to 20]" required="required" pattern="\d*" title="Numbers only, please. [range = 1 to 20]"/>
 
       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
